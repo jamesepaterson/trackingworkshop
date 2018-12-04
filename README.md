@@ -5,3 +5,4 @@ This repository holds the R code and sample data from my workshop on analyzing t
 2. Creating trajectories
 3. Home ranges with minimum convex polygons
 4. Home ranges with kernel density estimators
+5. Making 95% kernel contour area equal to the 100% minimum convex polygon area
