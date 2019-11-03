@@ -1,7 +1,6 @@
-# trackingworkshop
-This repository holds the R code and sample data from my workshop on analyzing telemetry data in R
+# Analyzing telemetry data in R
 
-Links go to tutorial posts on using code.
+This repository holds the R code and sample data from my workshop on analyzing telemetry data in R. Links go to tutorial posts on using code.
 
 1. Formatting data & basic mapping (https://jamesepaterson.github.io/jamespatersonblog/01_trackingworkshop_formatting)
 2. Creating trajectories (https://cdn.rawgit.com/jamesepaterson/trackingworkshop/c991da6e/trackingworkshop_trajectories.html)
