@@ -1,13 +1,24 @@
 # Analyzing telemetry data in R
 
-This repository holds the R code and sample data from my workshop on analyzing telemetry data in R. Links go to tutorial posts on my website using the code.
+This repository holds the R code and sample data from my workshop on analyzing tracking data in R. Links go to tutorial posts on my blog.
 
-1. Formatting data & basic mapping (https://jamesepaterson.github.io/jamespatersonblog/01_trackingworkshop_formatting)
-2. Creating trajectories (https://cdn.rawgit.com/jamesepaterson/trackingworkshop/c991da6e/trackingworkshop_trajectories.html)
-3. Home ranges with minimum convex polygons (https://jamesepaterson.github.io/jamespatersonblog/03_trackingworkshop_homeranges)
-4. Home ranges with kernel density estimators (https://jamesepaterson.github.io/jamespatersonblog/04_trackingworkshop_kernels)
-5. Functions to make 95% kernel contour area equal to the 100% minimum convex polygon area (https://jamesepaterson.github.io/jamespatersonblog/06_trackingworkshop_reptilekernels)
-6. Applying the functions to make 95% kernel contour area equal to the 100% minimum convex polygon area (https://jamesepaterson.github.io/jamespatersonblog/06_trackingworkshop_reptilekernels)
+Description of contents:
+
+`tracking_sample.csv` contains simulated tracking data for five turtles. This is the data used in all code examples in this repository.
+
+`01_formattingandmapping.R` Formatting data & basic mapping (https://jamesepaterson.github.io/jamespatersonblog/01_trackingworkshop_formatting)
+
+`02_trajectories.R` Creating trajectories (https://cdn.rawgit.com/jamesepaterson/trackingworkshop/c991da6e/trackingworkshop_trajectories.html)
+
+`03_homerangesMCP.R` Home ranges with minimum convex polygons (https://jamesepaterson.github.io/jamespatersonblog/03_trackingworkshop_homeranges)
+
+`04_homerangeskernels.R` Home ranges with kernel density estimators (https://jamesepaterson.github.io/jamespatersonblog/04_trackingworkshop_kernels)
+
+`05_reptilehomerangefunctions.R` Functions to make 95% kernel contour area equal to the 100% minimum convex polygon area
+
+`06_makingkernelsequalmcparea.R` Applying the functions to make 95% kernel contour area equal to the 100% minimum convex polygon area (https://jamesepaterson.github.io/jamespatersonblog/06_trackingworkshop_reptilekernels)
+
+`07_animatingtrackingdata.R` Animating telemetry data using `gganimate`
 
 # Citing this workshop?
 The code and data for this workshop is archived on Zenodo and has a DOI you can cite:
