@@ -6,6 +6,8 @@ Description of contents:
 
 `tracking_sample.csv` contains simulated tracking data for five turtles. This is the data used in all code examples in this repository.
 
+`boundaryfolder` contains the shapefiles for creating a kernel home range limited by a line.
+
 `01_formattingandmapping.R` Formatting data & basic mapping (https://jamesepaterson.github.io/jamespatersonblog/01_trackingworkshop_formatting)
 
 `02_trajectories.R` Creating trajectories (https://cdn.rawgit.com/jamesepaterson/trackingworkshop/c991da6e/trackingworkshop_trajectories.html)
