@@ -20,6 +20,8 @@ Description of contents:
 
 `07_animatingtrackingdata.R` Animating telemetry data using `gganimate`
 
+`08_homerangeskernels_boundary.R` Home ranges with kernel density estimators with boundaries
+
 # Citing this workshop?
 The code and data for this workshop is archived on Zenodo and has a DOI you can cite:
 DOI: 10.5281/zenodo.3557727
