@@ -48,11 +48,20 @@ turtles.mcpgeo <- spTransform(turtles.mcp, CRS("+proj=longlat"))
 
 # Download tiles using ggmap
 library(ggmap)
-mybasemap <- get_map(location = c(lon = mean(turtles.spgeo@coords[,1]), 
-                                  lat = mean(turtles.spgeo@coords[,2])), 
-                     source = "google", 
-                     zoom = 14, 
-                     maptype = 'satellite')
+# Google tiles (requires a key first)
+
+# register_google(key = "mykeyhere")
+# mybasemap <- get_map(location = c(lon = mean(turtles.spgeo@coords[,1]), 
+#                                   lat = mean(turtles.spgeo@coords[,2])), 
+#                      source = "google", 
+#                      zoom = 14,
+#                     maptype = 'satellite')
+
+mybasemap <- get_stamenmap(bbox = c(left = min(turtles.spgeo@coords[,1])-0.005, 
+                                    bottom = min(turtles.spgeo@coords[,2])-0.005, 
+                                    right = max(turtles.spgeo@coords[,1])+0.005, 
+                                    top = max(turtles.spgeo@coords[,2])+0.005), 
+                           zoom = 12)
 
 # Turn the spatial data frame of points into just a dataframe for plotting in ggmap
 turtles.geo <- data.frame(turtles.spgeo@coords, 
