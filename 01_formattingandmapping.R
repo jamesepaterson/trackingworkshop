@@ -48,13 +48,30 @@ points.sp.geo <- spTransform(points.sp, CRS("+proj=longlat +ellps=WGS84 +datum=W
 
 # Plot study site using ggmap
 library(ggmap)
-mybasemap <- get_map(location = c(lon = mean(points.sp.geo@coords[,1]) , 
-                                  lat = mean(points.sp.geo@coords[,2])), 
-                     source = "google", zoom = 14, maptype = 'satellite')
+mybasemap <- get_stamenmap(bbox = c(left = min(points.sp.geo@coords[,1])-0.01, 
+                                    bottom = min(points.sp.geo@coords[,2])-0.01, 
+                                    right = max(points.sp.geo@coords[,1])+0.01, 
+                                    top = max(points.sp.geo@coords[,2])+0.01), 
+                           zoom = 12)
 
-ggmap(mybasemap) # Map baselayer
+## For satellite imagery, use Google map tiles. However, you need to register a key.
+## Guide on getting a key: https://www.r-bloggers.com/geocoding-with-ggmap-and-the-google-api/
+# register_google(key = "yourkeyhere")
+## The location argument can take a vector with latitude and longitude, or a character string. 
+# mybasemap <- get_map(location = c(lon = mean(points.sp.geo@coords[,1]) , 
+#                                   lat = mean(points.sp.geo@coords[,2])), 
+#                      source = "google", zoom = 14, maptype = 'satellite')
 
-trentumap <- get_map(location = "trent university, peterborough", zoom = 16, maptype = 'satellite')
+# Google Map version
+# trentumap <- get_map(location = "trent university, peterborough", zoom = 16, maptype = 'satellite')
+
+# Stamen version
+trentumap <- get_stamenmap(bbox = c(left = -78.29 - 0.01,
+                       right = -78.29 + 0.01,
+                       bottom = 44.36 - 0.01,
+                       top = 44.36 + 0.01),
+              zoom = 15)
+
 ggmap(trentumap)
 
 # Turn the spatial data frame of points into just a dataframe for plotting in ggmap
