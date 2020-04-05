@@ -20,9 +20,9 @@ Description of contents:
 
 `06_makingkernelsequalmcparea.R` Applying the functions to make 95% kernel contour area equal to the 100% minimum convex polygon area (https://jamesepaterson.github.io/jamespatersonblog/06_trackingworkshop_reptilekernels)
 
-`07_animatingtrackingdata.R` Animating telemetry data using `gganimate`
+`07_animatingtrackingdata.R` Animating telemetry data using `gganimate` (https://jamesepaterson.github.io/jamespatersonblog/2020-01-02_animatingtrackingdata.html)
 
-`08_homerangeskernels_boundary.R` Home ranges with kernel density estimators with boundaries
+`08_homerangeskernels_boundary.R` Home ranges with kernel density estimators with boundaries (https://jamesepaterson.github.io/jamespatersonblog/2020-03-14_kernel_boundary.html)
 
 # Citing this workshop?
 The code and data for this workshop is archived on Zenodo and has a DOI you can cite:
