@@ -10,7 +10,7 @@ Description of contents:
 
 `01_formattingandmapping.R` Formatting data & basic mapping (https://jamesepaterson.github.io/jamespatersonblog/01_trackingworkshop_formatting)
 
-`02_trajectories.R` Creating trajectories (https://cdn.rawgit.com/jamesepaterson/trackingworkshop/c991da6e/trackingworkshop_trajectories.html)
+`02_trajectories.R` Creating trajectories (https://jamesepaterson.github.io/jamespatersonblog/02_trackingworkshop_trajectories)
 
 `03_homerangesMCP.R` Home ranges with minimum convex polygons (https://jamesepaterson.github.io/jamespatersonblog/03_trackingworkshop_homeranges)
 
