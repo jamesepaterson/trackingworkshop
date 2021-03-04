@@ -29,7 +29,7 @@ reptile.kd.h.fn <- function(trackingdatasp){
   hpred <- c()
   
   # Loop for each individual
-  for(i in 1:length(unique(tracking.mcp$id))){
+  for(i in 1:length(unique(trackingdatasp$id))){
     
     # Define spatial points
     id <- sort(unique(trackingdatasp@data$id))[i]
@@ -40,7 +40,7 @@ reptile.kd.h.fn <- function(trackingdatasp){
     href[i] <- kernel.ref[[1]]@h$h
     
     # define limits of h to try
-    htry <- seq(10, href[i] + 20, by = 5) 
+    htry <- seq(1, href[i] + 20, by = 2.5) 
     
     # Make a dataframe to hold areas
     areatoh.df <- data.frame()
@@ -58,8 +58,8 @@ reptile.kd.h.fn <- function(trackingdatasp){
     
     # First get rid of any wonky values (curves) at low smoothing factors
     if(sum(is.na(areatoh.df$area)) > 0){
-    last.h <- max(areatoh.df$h[is.na(areatoh.df$area)])
-    areatoh.df$area[areatoh.df$h < last.h + 20] <- NA
+      last.h <- max(areatoh.df$h[is.na(areatoh.df$area)])
+      areatoh.df$area[areatoh.df$h < last.h + 20] <- NA
     }
     
     # Try to fix NA values by expanding grid
