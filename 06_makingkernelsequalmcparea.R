@@ -34,7 +34,7 @@ print(tracking.mcp)
 ##### 2. Apply function to predict the smoothing factor -----------------------
 
 # Apply smoothing factor estimating function. system.time just provides time estimate
-# Notice I save vector of smoothing factos to "h.pred"
+# Notice I save vector of smoothing factos to "h.pred". The tracking data should be in metres.
 system.time(h.pred <- reptile.kd.h.fn(tracking.sp))  # The sp object should contain at least x,y, & id
 # Takes: 10 - 15 sec for 5 animals
 
