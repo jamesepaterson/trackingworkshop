@@ -15,7 +15,7 @@
 
 # Define the function to calculate smoothing factor.
 # This takes a tracking data set and calculates a smoothing factor for every individual to create 
-# a 95% kernel polygon that equals the area of the 100% MCP.
+# a 95% kernel polygon that equals the area of the 100% MCP. The tracking data should be in metres (eg. UTM).
 # This function returns a vector of smoothing factors to use in creating a home range.
 reptile.kd.h.fn <- function(trackingdatasp){  
   # trackingdatasp is a Spatial Points Dataframe containing: id, x, y
