@@ -24,6 +24,8 @@ Description of contents:
 
 `08_homerangeskernels_boundary.R` Home ranges with kernel density estimators with boundaries (https://jamesepaterson.github.io/jamespatersonblog/2020-03-14_kernel_boundary.html)
 
+`09_homerangeoverlap.R` Measuring home range overlap using the amt package (https://jamesepaterson.github.io/jamespatersonblog/2023-09-24_homerangeoverlap.html)
+
 # Citing this workshop?
 The code and data for this workshop is archived on Zenodo and has a DOI you can cite:
 DOI: 10.5281/zenodo.3557727
